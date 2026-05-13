@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FarmaTrack — <%= typeof title !== 'undefined' ? title : 'Producción' %></title>
+  <link rel="stylesheet" href="/css/style.css" />
+  <link rel="stylesheet" href="/css/panel.css" />
+  <link rel="stylesheet" href="/css/stepper.css" />
+</head>
+<body>
+
+  <aside class="sidebar">
+    <div class="sidebar__brand">
+      <div class="sidebar__avatar">Ft</div>
+      <div class="sidebar__brand-info">
+        <span class="sidebar__brand-name">FarmaTrack</span>
+        <span class="sidebar__brand-sub">Producción · Col.</span>
+      </div>
+    </div>
+
+    <nav class="sidebar__nav">
+      <p class="sidebar__section-label">PRODUCCIÓN</p>
+      <a href="#" class="sidebar__item sidebar__item--active">
+        Panel de lotes <span class="sidebar__badge">8</span>
+      </a>
+      <a href="#" class="sidebar__item">
+        Batch records <span class="sidebar__badge sidebar__badge--warning">3</span>
+      </a>
+      <a href="#" class="sidebar__item">Control calidad</a>
+      <a href="#" class="sidebar__item">Inventario MP</a>
+      <a href="#" class="sidebar__item">Bitácora</a>
+      <a href="#" class="sidebar__item">Reportes</a>
+
+      <p class="sidebar__section-label">SISTEMA</p>
+      <a href="#" class="sidebar__item">Configuración</a>
+    </nav>
+
+    <div class="sidebar__user">
+      <div class="avatar">DP</div>
+      <span class="sidebar__user-name">David Peña</span>
+    </div>
+  </aside>
+
+  <div class="main-wrapper">
+    <%- body %>
+  </div>
+
+</body>
+</html>
